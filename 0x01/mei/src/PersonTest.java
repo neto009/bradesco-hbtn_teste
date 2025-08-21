@@ -13,12 +13,12 @@ public class PersonTest {
         calendar.set(2000, Calendar.JANUARY, 1);
         Date birthDate = calendar.getTime();
         
-        person = new Person("Paul", "McCartney", birthDate, true, true, true);
+        person = new Person("Teste", "Silva", birthDate, true, true, true);
     }
 
     @Test
     public void show_full_name() {
-        assertEquals("Paul McCartney", person.fullName());
+        assertEquals("Teste Silva", person.fullName());
     }
 
     @Test
